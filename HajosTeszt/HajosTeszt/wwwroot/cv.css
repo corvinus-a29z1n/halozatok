@@ -1,0 +1,58 @@
+    body{
+        background-color: rgb(109, 192, 212);
+        font-family:Tahoma;
+    }
+    span{
+        font-style: italic;
+        color:yellow;
+    }
+    a{
+        color:yellow;
+    }
+    a:hover{
+        color:red;
+    }
+    h1{
+        text-align: center;   
+    }
+    h2{
+        text-align:justify;
+    }
+    p{
+        margin: 2px;
+        padding:20px;
+        border: 3px solid yellow;
+        border-radius: 30px;
+        text-align: center;
+    }
+    .lista{
+        margin: 2px;
+        padding:25px;
+        border: 3px solid yellow;
+        border-radius: 30px;
+        background-color: yellow;
+        width:max-content;
+    }
+    h3{
+        font-family: cursive;
+    }
+    h4{
+        font-weight: normal;
+    }
+    h5{
+        font-style: italic;
+    }
+    h6{
+        color: yellow;
+    }
+    img{
+        display: block;
+        margin: auto;
+        border: 4px solid yellow;
+    }
+    div{
+        margin: 2px;
+        padding:25px;
+        background-color: rgb(124, 209, 243);
+        border-radius: 30px;
+    }
