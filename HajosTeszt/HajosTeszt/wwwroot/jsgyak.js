@@ -27,7 +27,7 @@ window.onload = () =>
 
         ujdiv2.classList.add("elem");
         ujdiv2.innerText = faktoriális(sor) / (faktoriális(oszlop) * faktoriális(sor-oszlop));
-
+        
         }
     }
 }
