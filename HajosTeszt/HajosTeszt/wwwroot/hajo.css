@@ -1,3 +1,4 @@
+@import url('file:///C:\Users\vozoy\source\repos\halozatok\HajosTeszt\HajosTeszt\wwwroot\hajo.css');
 html, body{
     height: 100%;
 }
@@ -44,6 +45,16 @@ div{
 }
 
 .kattinthato:hover {
+    background-color: fuchsia;
+    color: white;
+}
+
+.vissza {
+    background-color: fuchsia;
+    color: white;
+}
+
+.előre {
     background-color: fuchsia;
     color: white;
 }
