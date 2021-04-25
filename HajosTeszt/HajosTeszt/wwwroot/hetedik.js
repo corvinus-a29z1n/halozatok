@@ -1,20 +1,53 @@
 var kérdések;
 var kérdésSorszám = 0;
 
-function letöltés() {
+/*function letöltés() {
     fetch('questions.json')
     .then(response => response.json())
     .then(data => letöltésBefejeződött(data));
-}
+}*/
 
-function letöltésBefejeződött(d) {
+fetch('/questions/4')
+    .then(response => response.json())
+    .then(data => console.log(data)
+);
+
+/*function letöltésBefejeződött(d) {
     console.log("Sikeres letöltés")
     console.log(d)
     kérdések = d;
     kérdésMegjelenítés(0);
+}*/
+
+function kérdésMegjelenítés(kérdés) {
+    console.log(kérdés);
+    document.getElementById("kérdés_szöveg").innerText = kérdés.questionText
+    document.getElementById("válasz1").innerText = kérdés.answer1
+    document.getElementById("válasz2").innerText = kérdés.answer2
+    document.getElementById("válasz3").innerText = kérdés.answer3
+    if (kérdés.image != "") {
+        document.getElementById("kép").src = "https://szoft1.comeback.hu/hajo/" + kérdés.image;
+    }
+    else {
+        document.getElementById("kép").src = "";
+    }
+    
 }
 
-function KérdésMegjelenítés(kérdésSzáma) {
+function kérdésBetöltés(id) {
+    fetch(`/questions/${id}`)
+        .then(response => {
+            if (!response.ok) {
+                console.error(`Hibás válasz: ${response.status}`)
+            }
+            else {
+                return response.json()
+            }
+        })
+        .then(data => kérdésMegjelenítés(data));
+} 
+
+/*function KérdésMegjelenítés(kérdésSzáma) {
     let kérdés_szöveg = document.getElementById("kérdés_szöveg");
     let kép = document.getElementById("kép1");
     let válasz1 = document.getElementById("válasz1");
@@ -34,10 +67,10 @@ válasz1.innerText = kérdések[kérdésSzáma].answer1
 válasz2.innerText = kérdések[kérdésSzáma].answer2
 válasz3.innerText = kérdések[kérdésSzáma].answer3
 }
-
+*/
 window.onload = () => {
 
-    letöltés();
+    //letöltés();
     document.getElementById("vissza").onclick = () => {
 
         document.getElementById("válasz1").style.backgroundColor = "peachpuff";
