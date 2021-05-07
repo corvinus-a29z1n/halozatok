@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HajosTeszt.Controllers
 {
-    [Route("api/[controller]")]
+    /*[Route("api/[controller]")]
     [ApiController]
     public class BoatController : ControllerBase
     {
@@ -36,4 +36,5 @@ namespace HajosTeszt.Controllers
             return new JsonResult(kérdés);
         }
     }
+*/
 }

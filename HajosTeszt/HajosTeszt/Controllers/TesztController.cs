@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace HajosTeszt.Controllers
 {
     //[Route("api/[controller]")]
-    [ApiController]
+    /*[ApiController]
     public class TesztController : ControllerBase
     {
         [HttpGet]
@@ -35,5 +35,5 @@ namespace HajosTeszt.Controllers
             };
         }
 
-    }
+    }*/
 }
