@@ -21,7 +21,7 @@ function init() {
 
     //előre hátra gombok
     document.getElementById("előre_gomb").addEventListener("click", előre);
-    document.getElementById("hátra_gomb").addEventListener("click", előre);
+    document.getElementById("hátra_gomb").addEventListener("click", hátra);
 
 
     //mentett állapot olvasása
